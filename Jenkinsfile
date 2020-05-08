@@ -12,7 +12,7 @@ pipeline {
         stage('clone'){
             agent any
             steps{
-                git 'https://github.com/tarangparikh/devops'
+                git 'https://github.com/vbh-git/Calculator.git'
             }
         }
         stage('Build') {
