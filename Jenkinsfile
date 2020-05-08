@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "tarangparikh/calculator"
+        registry = "vbhsharma/calculator"
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
@@ -61,7 +61,7 @@ pipeline {
                     script{
                         step([$class: "RundeckNotifier",
                         includeRundeckLogs: true,
-                        jobId: "149af780-50c1-4c87-be0f-282a285acc36",
+                        jobId: "2e48438d-3de4-4d1f-905c-92a1e725db47",
                         rundeckInstance: "Rundeck",
                         shouldFailTheBuild: true,
                         shouldWaitForRunDeckJob: true,
